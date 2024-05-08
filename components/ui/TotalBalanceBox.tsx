@@ -1,11 +1,11 @@
-import { formatAmount } from '@/lib/utils'
-import AnimatedCounter from './ui/AnimatedCounter'
+import AnimatedCounter from './AnimatedCounter'
+import  { DoughnutChart } from './DoughnutChart'
 
 const TotalBalanceBox = ( {accounts = [], totalBanks ,totalCurrentBalance}:TotlaBalanceBoxProps ) => {
   return (
     <section className='total-balance'>
         <div className='total-balance-chart'>
-
+            <DoughnutChart accounts={accounts}/>
         </div>
 
         <div className='felx flex-col gap-6'>
@@ -16,9 +16,9 @@ const TotalBalanceBox = ( {accounts = [], totalBanks ,totalCurrentBalance}:Totla
                 </p>
                 
                
-                <p className='total-balance-ammount flex-center gap-2'>
+                <div className='total-balance-ammount flex-center gap-2'>
                     <AnimatedCounter amount={totalCurrentBalance} />
-                </p>
+                </div>
             </div>
             
         </div>
