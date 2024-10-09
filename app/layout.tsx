@@ -10,7 +10,7 @@ const ibmPlexSerif = IBM_Plex_Serif({
 }) 
 
 export const metadata: Metadata = {
-  title: "AstroMoney",
+  title: "Horizon",
   description: "AstroMoney is the Banking Platform by Astro Nova Labs",
   icons: '/icons/logo.svg'
 };
